@@ -13,7 +13,7 @@ def user(name):
 
 @app.route("/admin")
 def admin():
-    return redirect(url_for("home"))
+    return redirect(url_for("user", name="ADMIN!"))
 
 
 if __name__ == "__main__":
